@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Waltograph';
+    src: url('../typography/waltograph42.otf') format('opentype'),
+         url('../typography/waltographUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#hero-banner {
+    background-image: url('../media/banner.gif'); 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    height: 100vh;
+}
+
+body {
+    margin:0;
+    display:inline-grid;
+    background-image: url('../image/fondo.jpg;')
+}
+
+#hero-banner h2 {
+    font-size: 2em;
+    color: #ffffff;
+    background-position: center;
+    text-align: center;
+    transform: translateY(20vh); 
+    font-size:800%;
+    display: block;
+    font-family: 'Waltograph', cursive;
+}
+
+#hero-banner p {
+    max-width: 800px;
+    margin: 0 auto;
+    background-position: center;
+    text-align: center;
+    transform: translateY(20vh); 
+    font-size:x-large;
+    color: #ffffff;
+}
+#main {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+article {
+    flex: 1;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ddd ;
+    height: fit-content;
+}
+
+article h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+article p {
+    text-align: center;
+}
+
+#Let_It_Go {
+    text-align: center;
+    font-family: 'Waltograph', cursive;
+   
+}
+#you_re_welcome{
+    text-align: center;
+    font-family: 'Waltograph', cursive;
+
+}
+#Son_of_Man{
+    text-align: center;
+    font-family: 'Waltograph', cursive;
+}
+
+.video{
+    border-radius: 15px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px; 
+    margin: 0;
+    padding: 0;
+    
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+
+}
+@media screen and (max-width: 600px) {
+    #hero-banner {
+        padding: 30px;
+    }
+    #main {
+        flex-direction: column;
+    }
+    article {
+        margin: 20px 0;
+    }
+    .video{
+        width: 100%;
+    }
+    #hero-banner h2 {
+        font-size:300%;
+    }
+}
